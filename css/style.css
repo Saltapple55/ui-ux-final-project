@@ -41,3 +41,7 @@
 .navSection{
 
 }
+
+.dropdown-menu.megamenu {
+    min-width: 1040px;
+}
