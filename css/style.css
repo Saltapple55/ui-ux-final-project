@@ -5,13 +5,29 @@
 .insurancePrompt{
     border: 0px;
 }
-.dropdown-menu{
-    display: none;
+.insurancePrompt .card-title{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.megamenu {
+    position: absolute;
+    overflow: hidden;
+
+    left: 0;
+    width: 100%;
+    right: 0;
+    padding: 0;
+    border: none;
+}
+.dropdown-menu:click{
+    display: block;
     overflow: hidden;
     align-items: center;
 
 }
-.dropdown-menu: hover{
+
+.dropdown-menu a{
     display: block;
     overflow: hidden;
     align-items: center;
@@ -21,4 +37,7 @@
     float: center;
     justify-content: space-around;
     align-items: center;
+}
+.navSection{
+
 }
