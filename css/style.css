@@ -1,0 +1,24 @@
+
+.center{
+    align-self: center;
+}
+.insurancePrompt{
+    border: 0px;
+}
+.dropdown-menu{
+    display: none;
+    overflow: hidden;
+    align-items: center;
+
+}
+.dropdown-menu: hover{
+    display: block;
+    overflow: hidden;
+    align-items: center;
+
+}
+.menuRow{
+    float: center;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -11,7 +11,7 @@
         <title>Manulife Center</title>
       </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navTop">
             <a class="navbar-brand" href="#">Manulife</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -19,10 +19,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Individual <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Business</a>
+                  <a class="nav-link" href="#">Contact us</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Advisors</a>
@@ -33,8 +33,8 @@
               </ul>
             </div>
           </nav>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light navBottom">
+            <a class="navbar-brand" href="#">Help Center</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,73 +42,118 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Individual
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <div class = "menurow">
+                            <div class = "menucolumn">
+                                <a class="dropdown-item navTitle" href="#">Insurance</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Life insurance</a>
+                                <a class="dropdown-item" href="#">Disability insurance</a>
+                                <a class="dropdown-item" href="#">Critical illness insurance</a>
+                                <a class="dropdown-item" href="#">Health and dental insurance</a>
+                                <a class="dropdown-item" href="#">Travel insurance</a>
+                                <a class="dropdown-item" href="#">Combination insurance</a>
+                                <a class="dropdown-item" href="#">Mortgage protection</a>
+                                <a class="dropdown-item navTitle" href="#">Invesments</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Solutions</a>
+                                <a class="dropdown-item" href="#">Viewpoints</a>
+                                <a class="dropdown-item" href="#">Resources</a>
+                                <a class="dropdown-item" href="#">Sustainability</a>
+                                <a class="dropdown-item" href="#">Travel insurance</a>
+                                <a class="dropdown-item" href="#">Regulatory</a>
+                                <a class="dropdown-item" href="#">In the media</a>
+                            </div>
+                            <div class = "menuColumn"> 
+                                <a class="dropdown-item navTitle" href="#">Plans</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Group benefits</a>
+                                <a class="dropdown-item" href="#">Group retirement</a>
+                                <a class="dropdown-item" href="#">Personal plan</a>
+
+
+                        </div>
+                        </div>
+
+
+
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Business
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Advisors
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
               </form>
             </div>
+            
           </nav>
         <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            <p> $1000 average annual savings</p>
+            <p> 5 minutes to set up coverage</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Get a Quote</a>
         </div>
         <div class="container">
-            <h2></h2>
+            <h2>Quick Tools</h2>
             <div class = "row">
               <div class="col-sm"> 
-                <div class="card" style="width: 18rem;">
+                <div class="card insurancePrompt" style="width: 18rem;">
                   <div class="card-body">
                     <img class="card-img-top center" src="images/Group 128horse.png" alt="Card image cap" style ="width: 70px" >
                     <h5 class="card-title">Find Advisor</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#">Go somewhere</a>
                 </div>
                 </div>
               </div>
               <div class="col-sm"> 
-                <div class="card" style="width: 18rem;">
+                <div class="card insurancePrompt" style="width: 18rem;">
                   <img class="card-img-top center" src="images/Group 129king.png" alt="Card image cap" style ="width: 70px">
                   <div class="card-body">
                     <h5 class="card-title"> Insurance Quote</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#">Go somewhere</a>
                 </div>
                 </div>
               </div>
               <div class="col-sm">
-                <div class="card" style="width: 20rem;">
+                <div class="card insurancePrompt" style="width: 18rem;">
                   <img class="card-img-top center" src="images/Group 125Pawn.png" alt="Card image cap" style ="width: 70px">
                   <div class="card-body">
                     <h5 class="card-title">Investments</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#">Go somewhere</a>
                 </div>
                 </div>
               </div>
@@ -141,37 +186,75 @@
               <div class="col-sm"> 
                 <div class="card" style="width: 18rem;">
                   <div class="card-body">
-                    <img class="card-img-top center" src="images/Group 128horse.png" alt="Card image cap" style ="width: 70px" >
-                    <h5 class="card-title">Find Advisor</h5>
+                    <img class="card-img-top center" src="images/Group 86Family.png" alt="Card image cap" style ="width: 70px" >
+                    <h5 class="card-title">Family</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#">Go for it</a>
                 </div>
                 </div>
               </div>
               <div class="col-sm"> 
                 <div class="card" style="width: 18rem;">
-                  <img class="card-img-top center" src="images/Group 129king.png" alt="Card image cap" style ="width: 70px">
+                  <img class="card-img-top center" src="images/Group 87House.png" alt="Card image cap" style ="width: 70px">
                   <div class="card-body">
-                    <h5 class="card-title"> Insurance Quote</h5>
+                    <h5 class="card-title">House</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
                     </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#">Go for it</a>
                 </div>
                 </div>
               </div>
               <div class="col-sm">
-                <div class="card" style="width: 20rem;">
-                  <img class="card-img-top center" src="images/Group 125Pawn.png" alt="Card image cap" style ="width: 70px">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top center" src="images/Group 88Retirement.png" alt="Card image cap" style ="width: 70px">
                   <div class="card-body">
-                    <h5 class="card-title">Investments</h5>
+                    <h5 class="card-title">Retirement</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#">Go for it</a>
                 </div>
                 </div>
-
+                <div class="col-sm"> 
+                    <div class="card" style="width: 18rem;">
+                      <img class="card-img-top center" src="images/Group 89Employment.png" alt="Card image cap" style ="width: 70px">
+                      <div class="card-body">
+                        <h5 class="card-title">Employment</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    
+                        </p>
+                        <a href="#">Go somewhere</a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                      <img class="card-img-top center" src="images/Group 90Health.png" alt="Card image cap" style ="width: 70px">
+                      <div class="card-body">
+                        <h5 class="card-title">Health</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#">Go somewhere</a>
+                    </div>
+                    </div>
+        <div class="input-group flex-nowrap">
+            <h3> Subscribe to get informed</h3> 
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="addon-wrapping">Email</span>
+             </div>
+            <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="addon-wrapping">
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    
     </body>
+<footer>
+    <ul class = "footerMenu">
+        <li></li>
 
+    </ul>
+
+</footer>
 </html>
