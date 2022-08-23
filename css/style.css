@@ -13,7 +13,6 @@
 .megamenu {
     position: absolute;
     overflow: hidden;
-
     left: 0;
     width: 100%;
     right: 0;
@@ -38,10 +37,102 @@
     justify-content: space-around;
     align-items: center;
 }
-.navSection{
+.navBottom{
+    float: center;
+    background-color: white;
 
 }
 
 .dropdown-menu.megamenu {
     min-width: 1040px;
 }
+
+.jumbotron{
+    background-image: image()
+}
+
+
+
+.slideContainer{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 11;
+    width: 100%
+}
+.testimony{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+}
+.testimony div{
+    padding:0.1px 0px 15px 0px;
+    align-items: center;
+
+}
+
+.testimony .testimonyWord{
+    width: 320px;
+    height: 570px;
+    justify-content: center;
+    align-items: center;
+}
+.testimony .container{
+    background-color: #009A52;
+    height: 570px;
+    justify-content: center;
+    align-items: center;
+
+}
+.testimony .card{
+    width: 295px;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.testimony .card-title{
+    font-size: 128;
+    font-family: 'Montserrat';
+    color: #00BF66;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+.card-text{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    padding: 10px 10px 10px 10px;
+}
+.lifePlans .card{
+    margin:0px 0px 0px 0px;
+}
+
+/*.slide-content{
+    margin: 0 40px;
+}
+.cardTestimony{
+    border-radius: 25px;
+    background-color: white;
+    width: 300px;
+}
+.cardImage{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+.cardImage .cardImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+
+}
+*/
