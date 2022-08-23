@@ -1,4 +1,6 @@
-
+.navTop{
+    background-color: #00BF66 !important;
+}
 .center{
     align-self: center;
 }
@@ -39,7 +41,9 @@
 }
 .navBottom{
     float: center;
-    background-color: white;
+    background-color: white !important;
+    box-shadow: 5px 5px 8px;
+
 
 }
 
@@ -48,10 +52,14 @@
 }
 
 .jumbotron{
-    background-image: image()
+    background-image:url("HeroImage.png");
 }
 
-
+.jumbotron .bigGreen{
+    font-size: 48;
+    font-family: "Montserrat";
+    color: #42B031;
+}
 
 .slideContainer{
     min-height: 100vh;
@@ -65,30 +73,31 @@
     display: flex;
     justify-content: space-between;
     color: white;
-
+    background-color: #009A52;
 }
-.testimony div{
+/* .testimony div{
     padding:0.1px 0px 15px 0px;
     align-items: center;
 
-}
+} */
 
 .testimony .testimonyWord{
     width: 320px;
     height: 570px;
     justify-content: center;
     align-items: center;
+    padding: 10px 10px 10px 10px;
 }
 .testimony .container{
     background-color: #009A52;
     height: 570px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
 }
 .testimony .card{
     width: 295px;
-    height: 320px;
+    height: 380px;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -108,6 +117,36 @@
 }
 .lifePlans .card{
     margin:0px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+}
+
+footer{
+    background-color: #424559;
+    color: white;
+    padding: 20px 10px 20px 10px;
+    justify-content: center;
+    align-items: stretch;
+    height: 340px;
+
+
+
+}
+
+footer .row{
+    float:block;
+    display: flex;
+    height: 100px;
+    align-items: baseline;
+}
+footer .red{
+    color: #EC6453;
+}
+
+footer ul {
+    list-style-type: none;
+}
+footer ul li {
+    /* direction: rtl */
 }
 
 /*.slide-content{
