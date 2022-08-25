@@ -1,0 +1,227 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    background-color: white;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    display: flex;   
+}
+
+/*_______________________Below is the banner section____________________________________
+.banner{
+
+}
+
+
+/*_______________________Below is the insurance comparison section____________________________________*/
+/*intro header*/
+.comparison_title{
+    font-family: Montserrat;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/*main*/
+.comparison-title{
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    padding: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.product_header{
+    font-family: Inter;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.product-header{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+
+    background-color: #00BF66;
+    box-shadow: 0 7px 30px rgb(52,31,97,0.5);
+    padding: 2rem;
+    margin: 0 20px;
+    flex-grow: 1;
+    flex-basis: 0;
+    width: 415px;
+    border-radius: 7px 7px 0 0;
+}
+
+.product_detail{
+    font-family: Inter;
+    display:flex;
+    justify-content: space-between;
+    align-items:baseline;
+    margin-right: 180px;
+    margin-left: 180px;
+}
+
+.term{
+    background-color: white;
+    box-shadow: 0 7px 30px rgb(52,31,97,0.5);
+    padding: 2rem;
+    margin: 0 20px;
+    flex-grow: 1;
+    flex-basis: 0;
+    width: 415px;
+    border-radius: 0 0 7px 7px;
+}
+
+.permanent{
+    background-color: white;
+    box-shadow: 0 7px 30px rgb(52,31,97,0.5);
+    padding: 2rem;
+    margin: 0 20px;
+    flex-grow: 1;
+    flex-basis: 0;
+    width: 415px;
+    border-radius: 0 0 7px 7px;
+}
+
+.coverme{
+    background-color: white;
+    box-shadow: 0 7px 30px rgb(52,31,97,0.5);
+    padding: 2rem;
+    margin: 0 20px;
+    flex-grow: 1;
+    flex-basis: 0;
+    width: 415px;
+    border-radius: 0 0 7px 7px;
+}
+
+.title{
+    color: black;
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: left;
+    padding: 10px;
+}
+
+.body{
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.price-per-month{
+    display: flex;
+}
+
+.price{
+    color: #028949;
+    font-size: 32px;
+    text-align: left;
+    padding-top: 30px;
+}
+
+.per-month{
+    display: flex;
+    align-self: flex-end;
+    color: #028949;
+    font-size: 18px;
+}
+
+.insurance-button{
+    border: none;
+    border-radius: 3px;
+    background-color: #EC6453;
+    color: white;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 4rem;
+    transition: 100ms;
+}
+
+.insurance-button:hover{
+    background-color: #B13E2F;
+}
+
+/*____________________Below is the combination insurance section__________________________*/
+.combination_header{
+    font-family: Inter;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.combination-header{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+
+    background-color: #00BF66;
+    box-shadow: 0 -7px 30px rgb(52,31,97,0.3);
+    padding: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    border-radius: 7px 7px 0 0;
+}
+
+.combination_detail{
+    font-family: Inter;
+    justify-content: space-between;
+    align-items:baseline;
+    background-color: white;
+    box-shadow: 0 7px 30px rgb(52,31,97,0.5);
+    padding: 2rem;
+    margin: 0 20px;
+    flex-grow: 1;
+    flex-basis: 0;
+    border-radius: 0 0 7px 7px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 200px;
+}
+
+.comb-body{
+
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    padding: 10px;
+}
+
+.comb-button{
+    border: none;
+    border-radius: 3px;
+    background-color: #EC6453;
+    color: white;
+    width: 20%;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 1rem;
+    transition: 100ms;
+    margin-left: 75%;
+
+
+}
+
+.comb-button:hover{
+    background-color: #B13E2F;
+}
+
