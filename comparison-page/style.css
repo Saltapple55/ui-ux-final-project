@@ -225,3 +225,13 @@ body {
     background-color: #B13E2F;
 }
 
+.detail-container {
+    min-height: 750px;
+    position: relative;
+}
+
+.detail-container .insurance-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
