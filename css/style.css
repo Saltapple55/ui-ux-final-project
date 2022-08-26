@@ -245,7 +245,7 @@ footer ul {
 .stepper-item::before {
   position: absolute;
   content: "";
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #CAEFDB;
   opacity: .4;
   width: 100%;
   top: 20px;
@@ -257,11 +257,16 @@ footer ul {
 .stepper-item::after {
   position: absolute;
   content: "";
-  border-bottom: 2px solid #2BBD6D;
+  border-bottom: 2px solid #CAEFDB;
   width: 100%;
   top: 20px;
   left: 50%;
   z-index: 2;
+}
+.step-name{
+  position: absolute;
+  bottom: -20px;
+
 }
 
 .stepper-item .step-counter {
@@ -274,9 +279,8 @@ footer ul {
   height: 10px;
   top: 16px;
   border-radius: 50%;
-  background: #2BBD6D;
+  background: #CAEFDB;
   margin-bottom: 6px;
-  filter: opacity(70%);
 }
 
 .stepper-item.active {

@@ -16,8 +16,8 @@ $(".workItem").mouseleave(function(){
      } );
 
 });
-const  previousBtn  =  document.getElementById('previousBtn');
-const  previousBtn2  =  document.getElementById('previousBtn2');
+const  previousBtn  =  document.getElementById('prevBtn');
+const  previousBtn2  =  document.getElementById('prevBtn2');
 
 const  nextBtn  =  document.getElementById('nextBtn');
 const  nextBtn2  =  document.getElementById('nextBtn2');
@@ -70,6 +70,7 @@ nextBtn2.addEventListener('click',  ()  =>  {
 
 
 previousBtn.addEventListener('click',  ()  =>  {
+    stepperItem[currentStep].classList.remove('active');
 	stepperItem[currentStep  -  1].classList.remove('completed');
     stepperItem[currentStep - 1].classList.add('active');
 	currentStep  -=  1;
@@ -81,6 +82,7 @@ previousBtn.addEventListener('click',  ()  =>  {
 	content.innerText  =  `Step Number ${currentStep}`;
 });
 previousBtn2.addEventListener('click',  ()  =>  {
+    stepperItem[currentStep].classList.remove('completed');
 	stepperItem[currentStep  -  1].classList.remove('completed');
     stepperItem[currentStep - 1].classList.add('active');
 	currentStep  -=  1;
