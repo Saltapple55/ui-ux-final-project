@@ -50,9 +50,8 @@
 .dropdown-menu.megamenu {
     min-width: 1040px;
 }
-
-.jumbotron{
-    background-image:url("HeroImage.png");
+.homeHero{
+    background-image:url("HeroImg.png");
 }
 
 .jumbotron .bigGreen{
@@ -127,9 +126,6 @@ footer{
     justify-content: center;
     align-items: stretch;
     height: 340px;
-
-
-
 }
 
 footer .row{
@@ -145,9 +141,265 @@ footer .red{
 footer ul {
     list-style-type: none;
 }
-footer ul li {
-    /* direction: rtl */
+
+.logo{
+    float: center;
 }
+
+/* Starting quote page here*/
+.quote{
+    width: 100vh;
+    height: 100vh;
+    padding: 10px;
+    margin: 20px 50px 20px 50px;
+    border: black;
+    border-style: solid;
+    box-shadow: 10px 10px 8px #888;
+    overflow: auto;
+
+}
+.carouselExampleIndicators{
+    background-color: blue;
+    color: blue;
+    
+}
+.carousel-indicators > li {
+    border-radius: 50%;
+    background-color: blue;
+    color: blue;
+    height: 30px;
+  }
+
+  .sr-only{
+    background-color: blue;
+    color: blue;
+  }
+.quoteRes{
+    background-image:url("./quote-result.jpg");
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .slider {
+    width: 1000px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    
+    /*
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+    */
+  }
+  .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 1000px;
+    height: auto;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;}
+
+.stepper-wrapper{
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.stepper-item::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ccc;
+  opacity: .4;
+  width: 100%;
+  top: 20px;
+  left: -50%;
+  z-index: 2;
+  
+}
+
+.stepper-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #2BBD6D;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 2;
+}
+
+.stepper-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  top: 16px;
+  border-radius: 50%;
+  background: #2BBD6D;
+  margin-bottom: 6px;
+  filter: opacity(70%);
+}
+
+.stepper-item.active {
+  font-weight: bold;
+}
+.stepper-item.active .step-counter {
+  background-color: #2BBD6D;
+  filter: saturate(100%);
+  width: 40px;
+  height: 40px;
+  top: 0px;
+
+}
+
+.stepper-item.completed .step-counter {
+  background-color: #2BBD6D;
+  filter: saturate(100%);
+  width: 40px;
+  height: 40px;
+  top: 0px;
+}
+
+.stepper-item.completed::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #2BBD6D;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 3;
+}
+
+.stepper-item:first-child::before {
+  content: none;
+}
+.stepper-item:last-child::after {
+  content: none;
+}
+/* #stepProgressBar  {
+	display:  flex;
+	justify-content:  space-between;
+	align-items:  flex-end;
+	width:  400px;
+	margin:  0  auto;
+	margin-bottom:  40px;
+}
+
+.step  {
+text-align:  center;
+}
+
+.step-text  {
+margin-bottom:  10px;
+color:  #28a745;
+}
+
+
+.bullet {
+	border: 15px solid #28a745;
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
+	color: #28a745;
+	display: inline-block;
+	position: relative;
+	transition: background-color 500ms;
+  line-height:20px;
+}
+
+
+.bullet.completed  {
+	color:  white;
+	background-color:  #28a745;
+  height: 43px;
+	width: 43px;
+}
+
+
+
+.bullet.completed::after {
+	content: '';
+	position: absolute;
+	right: -100px;
+	bottom: 5px;
+	height: 1px;
+	width: 130px;
+	background-color: #28a745;
+}
+
+/* Base styles and helper stuff */
+/* .hidden  {
+	display:  none;
+}
+ 
+button  {
+	padding:  5px  10px;
+	border:  1px  solid  black;
+	transition:  250ms background-color;
+}
+
+button:hover  {
+	cursor:  pointer;
+	background-color:  black;
+	color:  white;
+}
+
+button:disabled:hover  {
+	opacity:  0.6;
+	cursor:  not-allowed;
+}
+
+.text-center  {
+	text-align:  center;
+}
+  
+.containr  {
+	max-width:  400px;
+	margin:  0  auto;
+	margin-top:  20px;
+	padding:  40px;
+}
+ */
+
 
 /*.slide-content{
     margin: 0 40px;
