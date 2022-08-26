@@ -232,4 +232,6 @@ body {
 
 .detail-container .insurance-button {
     position: absolute;
+    bottom: 0;
+    left: 0;
 }
