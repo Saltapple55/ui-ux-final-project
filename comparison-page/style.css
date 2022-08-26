@@ -12,11 +12,38 @@ body {
     display: flex;   
 }
 
-/*_______________________Below is the banner section____________________________________
-.banner{
+/*_______________________Below is the banner section____________________________________*/
 
+.banner-area{
+    position: relative;
+    width:100%;
+    margin:0 auto;
 }
 
+.banner-area img{
+    width:100%;
+}
+
+.banner-area h1{
+    color: white;
+    font-size: 32px; 
+    font-family: Montserrat;
+    position: absolute;    
+    top: 25%;
+    left: 25%;
+    text-align: center;
+}
+
+.banner-area h2{
+    color: white;
+    font-size: 20px; 
+    font-family: Montserrat;
+    position: absolute;
+    width:50%;
+    top: 40%;
+    left: 5%;
+    text-align: center;
+}
 
 /*_______________________Below is the insurance comparison section____________________________________*/
 /*intro header*/
@@ -38,6 +65,7 @@ body {
     padding: 2rem;
     flex-grow: 1;
     flex-basis: 0;
+    margin-bottom: 40px;
 }
 
 .product_header{
@@ -110,6 +138,13 @@ body {
     color: black;
     font-size: 20px;
     text-decoration: underline;
+    text-align: left;
+    padding: 10px;
+}
+
+.first-title{
+    color: black;
+    font-size:24px;
     text-align: left;
     padding: 10px;
 }
@@ -217,8 +252,6 @@ body {
     margin-top: 1rem;
     transition: 100ms;
     margin-left: 75%;
-
-
 }
 
 .comb-button:hover{
@@ -230,8 +263,19 @@ body {
     position: relative;
 }
 
-.detail-container .insurance-button {
+
+.detail-container .price-per-month {
     position: absolute;
     bottom: 0;
     left: 0;
+    bottom:15%;
+    left: 10%;
+}
+
+.detail-container .insurance-button {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    right: 10%;
+    width: 75%;
 }
