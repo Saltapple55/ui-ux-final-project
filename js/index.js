@@ -57,41 +57,30 @@ nextBtn2.addEventListener('click',  ()  =>  {
 		nextBtn.disabled  =  true;
     }
 });
-// nextBtn2.addEventListener('click',  ()  =>  {
-// 	bullets[currentStep  -  1].classList.add('completed');
-// 	currentStep  +=  1;
-// 	previousBtn.disabled  =  false;
-// 	if  (currentStep  ===  MAX_STEPS)  {
-// 		nextBtn.disabled  =  true;
-// 		finishBtn.disabled  =  false;
-// 	}
-// 	content.innerText  =  `Step Number ${currentStep}`;
-// });
-
 
 previousBtn.addEventListener('click',  ()  =>  {
-    stepperItem[currentStep].classList.remove('active');
-	stepperItem[currentStep  -  1].classList.remove('completed');
-    stepperItem[currentStep - 1].classList.add('active');
+    stepperItem[currentStep-1].classList.remove('active');
+	stepperItem[currentStep  -  2].classList.remove('completed');
+    stepperItem[currentStep - 2].classList.add('active');
 	currentStep  -=  1;
+    console.log("Your prev is loaded correctly");
+
 	nextBtn.disabled  =  false;
 	finishBtn.disabled  =  true;
 	if  (currentStep  ===  1)  {
 		previousBtn.disabled  =  true;
 	}
-	content.innerText  =  `Step Number ${currentStep}`;
 });
 previousBtn2.addEventListener('click',  ()  =>  {
-    stepperItem[currentStep].classList.remove('completed');
-	stepperItem[currentStep  -  1].classList.remove('completed');
-    stepperItem[currentStep - 1].classList.add('active');
+    stepperItem[currentStep-1].classList.remove('active');
+	stepperItem[currentStep  -  2].classList.remove('completed');
+    stepperItem[currentStep - 2].classList.add('active');
 	currentStep  -=  1;
 	nextBtn.disabled  =  false;
 	finishBtn.disabled  =  true;
 	if  (currentStep  ===  1)  {
 		previousBtn.disabled  =  true;
 	}
-	content.innerText  =  `Step Number ${currentStep}`;
 });
 
 finishBtn.addEventListener('click',  ()  =>  {
