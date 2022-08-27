@@ -113,8 +113,6 @@ flex-grow: 0;
 .qcenterCard{
   border-left: 1px solid #CDCDCD;
   border-right: 1px solid #CDCDCD;
-
-
 }
 .qCard .card-title{
   font-weight: 600;
@@ -151,9 +149,22 @@ flex-grow: 0;
   color: #00BF66;
   margin-left: 5px;
 }
-.testimony .btn{
-
-}
+/* 
+#002f4b,#dc4225 
+Convert HEX to RGBA - http://hex2rgba.devoth.com/
+*/ /*
+.img-gradient:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%,rgba(255, 255, 255, 0.5) 100%); /* Chrome10+,Safari5.1+ */
+  /* background: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%,rgba((255, 255, 255, 0.5) 100%); /* Opera 11.10+ */
+  /* background: -ms-linear-gradient(top, rgba((255, 255, 255, 0.5) 0%,rgba((255, 255, 255, 0.5) 100%); IE10+ */
+  /* background: linear-gradient(to bottom, rgba(0,47,75,0.5) 0%,rgba((255, 255, 255, 0.5) 100%); W3C */
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); IE6-9 */
+  /* z-index: 2; */
 
 .slideContainer{
     min-height: 100vh;
@@ -187,6 +198,7 @@ flex-grow: 0;
     height: 470px;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 
 }
 .testimony .card{
@@ -253,6 +265,10 @@ footer ul {
     overflow: auto;
 
 }
+.cIndicator{
+  display: flex;
+  justify-content: center;
+}
 .carouselExampleIndicators{
     background-color: blue;
     color: blue;
@@ -264,7 +280,6 @@ footer ul {
     color: blue;
     height: 30px;
   }
-
   .sr-only{
     background-color: blue;
     color: blue;
