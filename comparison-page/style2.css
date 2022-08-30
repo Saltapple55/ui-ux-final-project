@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body {
+.main {
     margin:0;
     background-color: white;
     min-width: 100vw;
@@ -11,7 +11,61 @@ body {
     justify-content:center;
     display: flex;   
 }
+.navTop{
+    background-color: #00BF66 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    z-index: 3;
+}
+.navTitle{
+  font-weight: 600;
+  padding-top: 20px;
+}
+.center{
+    align-self: center !important;
+}
 
+.megamenu {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    right: 0;
+    padding: 0;
+    border: none;
+    z-index: 5;
+
+}
+.dropdown-menu:click{
+    display: block;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.dropdown-menu a{
+    display: block;
+    overflow: hidden;
+    align-items: center;
+}
+.menuRow{
+    float: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.navBottom{
+    float: center;
+    background-color: white !important;
+    box-shadow: 5px 5px 8px #E6E6E6;
+    z-index: 9;
+}
+
+.dropdown-menu.megamenu {
+    min-width: 1040px;
+    z-index: 9;
+
+}
 /*_______________________Below is the banner section____________________________________*/
 
 .banner-area{
@@ -278,4 +332,30 @@ body {
     left: 10%;
     right: 10%;
     width: 75%;
+}
+footer{
+    background-color: #424559;
+    color: white;
+    padding: 20px 10px 20px 10px;
+    justify-content: center;
+    align-items: stretch;
+    height: 340px;
+}
+
+footer .row{
+    float:block;
+    display: flex;
+    height: 100px;
+    align-items: baseline;
+}
+footer .red{
+    color: #EC6453;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.logo{
+    float: center;
 }

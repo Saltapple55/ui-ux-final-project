@@ -1,25 +1,13 @@
 html {
   scroll-behavior: smooth;
 }
-p{
-  font-family: 'open-sans', sans-serif;
-  font-size: 18;
-  font-weight: 300;
-}
 .padding-0{
   padding-right:0 !important;
   padding-left:0 !important;
 }
 .navTop{
     background-color: #00BF66 !important;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
     z-index: 3;
-}
-.navTitle{
-  font-weight: 600;
-  padding-top: 20px;
 }
 .center{
     align-self: center !important;
@@ -56,7 +44,7 @@ p{
 .navBottom{
     float: center;
     background-color: white !important;
-    box-shadow: 5px 5px 8px #E6E6E6;
+    box-shadow: 5px 5px 8px;
     z-index: 9;
 }
 
@@ -101,7 +89,7 @@ p{
   display: flex;
   justify-content: center;
 }
-.secHeader{
+.qTools h2{
   font-size: 32;
   font-family: "Montserrat", sans-serif;
   color: #616161;
@@ -164,14 +152,19 @@ flex-grow: 0;
 /* 
 #002f4b,#dc4225 
 Convert HEX to RGBA - http://hex2rgba.devoth.com/
-*/ 
-.img-gradient {
+*/ /*
+.img-gradient:after {
   content:'';
   position:absolute;
   left:0; top:0;
   width:100%; height:100%;
-  /* display:inline-block; */
-    z-index: 2; }
+  display:inline-block;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%,rgba(255, 255, 255, 0.5) 100%); /* Chrome10+,Safari5.1+ */
+  /* background: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%,rgba((255, 255, 255, 0.5) 100%); /* Opera 11.10+ */
+  /* background: -ms-linear-gradient(top, rgba((255, 255, 255, 0.5) 0%,rgba((255, 255, 255, 0.5) 100%); IE10+ */
+  /* background: linear-gradient(to bottom, rgba(0,47,75,0.5) 0%,rgba((255, 255, 255, 0.5) 100%); W3C */
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); IE6-9 */
+  /* z-index: 2; */
 
 .slideContainer{
     min-height: 100vh;
@@ -192,11 +185,7 @@ Convert HEX to RGBA - http://hex2rgba.devoth.com/
     align-items: center;
 
 } */
-.testimony .chevrons{
-  position: absolute;
-  right: 50px;
-  top: 10px;
-}
+
 .testimony .testimonyWord{
     width: 320px;
     height: 570px;
@@ -226,78 +215,15 @@ Convert HEX to RGBA - http://hex2rgba.devoth.com/
     top: 40%;
     left: 15%;
 }
-.abs{
-  position: absolute;
-}
-.cIndicator{
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-.carouselExampleIndicators{
-    background-color: blue;
-    color: blue;
-    
-}
-.carousel-indicators > li {
-    border-radius: 50%;
-    background-color: blue;
-    color: blue;
-    height: 30px;
-  }
-  .sr-only{
-    background-color: blue;
-    color: blue;
-  }
 .card-text{
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
     padding: 10px 10px 10px 10px;
 }
-/* Life Plans*/
-.lifePlans{
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-}
-.lifePLans .row{
-  display: flex;
-  justify-content: center;
-}
 .lifePlans .card{
     margin:0px 0px 0px 0px;
-    padding: 10px 0px 0px 0px;
-    flex-grow: 0;
-    height: 320px;
-    width: 228px; 
-    box-shadow: 5px 5px 8px #E6E6E6;
-}
-.lifePlans .card a{
-  position: absolute;
-  bottom: 10;
-  left: 80;
-  color: #000;
-}
-
-.lifePlans .col-sm{
-  flex-grow: 0;
-
-}
-.subscribe .container{
-  display: flex;
-  justify-content: center;
-}
-.subscribe .newsletter{
-align-items: center;
-}
-.subscribe .btn{
-color: #EC6453 !important;
-
-}
-.subscribe .btn .input-group-text{
-  color: white;
-
+    padding: 10px 10px 10px 10px;
 }
 
 footer{
@@ -339,21 +265,46 @@ footer ul {
     overflow: auto;
 
 }
-
+.cIndicator{
+  display: flex;
+  justify-content: center;
+}
+.carouselExampleIndicators{
+    background-color: blue;
+    color: blue;
+    
+}
+.carousel-indicators > li {
+    border-radius: 50%;
+    background-color: blue;
+    color: blue;
+    height: 30px;
+  }
+  .sr-only{
+    background-color: blue;
+    color: blue;
+  }
+.quoteRes{
+    background-image:url("./quote-result.jpg");
+}
+* {
+    box-sizing: border-box;
+  }
   
 .slider {
-    width: 100%;
+    width: 1000px;
     text-align: center;
     overflow: hidden;
     bottom: 100px;
     position: relative;
   
     z-index: 0;
+
+
+
 }
 .slider .btn{
 z-index: 10;
-background-color: #EC6453;
-border: 0px;
 
 }
   
@@ -370,17 +321,9 @@ border: 0px;
     scroll-snap-type: mandatory;
     */
 }
-.chooseCov{
-  color: white;
 
-}
-.quoteForm label{
-  float: left;
-  text-align: left;
-}
-
-.blankrow{
-  height: 150px;
+#blank1{
+  height: 100px;
 
 }
 #blank2{
@@ -392,51 +335,6 @@ border: 0px;
 
 }
 
-.quoteTitle{
-background-color: #00BF66;
-color: white;
-font-family: "Montserrat";
-font-size: 20;
-align-self: left;
-display: flex;
-
-}
-.quoteTitle h1{
-padding: 20px 20px 20px 20px;
-}
-* {
-  box-sizing: border-box;
-}
-
-.quoteRes{
-  background-image:url("./quote-result.jpg");
-  color: white;
-  background-position: left center;
-  background-clip: border-box;
-}
-.quoteRes .row{
-display: flex;
-justify-content: flex-end;
-}
-.quoteRes .column{
-  padding: 20px 20px 20px 20px;
-  padding-left: 20px;
-
-}
-.quoteRes .greenRes{
-  color:#028949;
-  font-size: 30px;
-  font-family: "Montserrat";
-}
-.greenResSmall{
-  font-size: 16px;
-
-}
-.circleDollar:after {
-  content: '\f2e8';
-  font-family: fontawesome, sans-serif;
-  color: white;
-}
 
 
 .slides::-webkit-scrollbar {
@@ -450,43 +348,19 @@ justify-content: flex-end;
 .slides::-webkit-scrollbar-track {
     background: transparent;
 }
-.slides .slideCont {
+.slides > div {
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 1000px;
     height: auto;
     margin-right: 50px;
-    margin-left: 50px;
     border-radius: 10px;
     background: #FFFFFF;
     transform-origin: center center;
     transform: scale(1);
     transition: transform 0.5s;
+
   }
-#slide-1-5{
-  width: 400px;
-
-}
-#slide-2-5{
-  width: 400px;
-
-}
-.blankcol{
-  width: 400px;
-
-}
-/* .slides. h3{
-font-family: 'Montserrat';
-font-size: 32;
-font-weight: 400;
-
-} */
-
-  /* #slide-1Content{
-    width: auto;
-    height: 900;
-    background-color: white;
-  } */
 
 .stepper-wrapper{
   margin-top: 20px;;
@@ -555,8 +429,7 @@ font-weight: 400;
   font-weight: bold;
 }
 .stepper-item.active .step-counter {
-  background-color: white;
-  border: 13px solid #2BBD6D; 
+  background-color: #2BBD6D;
   filter: saturate(100%);
   width: 40px;
   height: 40px;
@@ -565,8 +438,7 @@ font-weight: 400;
 }
 
 .stepper-item.completed .step-counter {
-  background-color: white;
-  border: 13px solid #2BBD6D; 
+  background-color: #2BBD6D;
   filter: saturate(100%);
   width: 40px;
   height: 40px;

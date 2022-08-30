@@ -14,7 +14,7 @@
       </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light navTop">
-            <img src = "images/Manulife+Securities+white 1.png" width="218px"> 
+            <a href="/index.html"><img src = "images/Manulife+Securities+white 1.png" width="218px"> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,18 +29,10 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contact us</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
               </ul>
             </div>
           </nav>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light navBottom">
-            <!-- <a class="navbar-brand" href="#">Help Center</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button> -->
-          
+          <nav class="navbar navbar-expand-lg navbar-light bg-light navBottom">  
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -56,7 +48,7 @@
                                 <div class = "navSection">
                                     <a class="dropdown-item navTitle" href="#">Insurance</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Life insurance</a>
+                                    <a class="dropdown-item" href="./comparison-page/comparison.html">Life insurance</a>
                                     <a class="dropdown-item" href="#">Disability insurance</a>
                                     <a class="dropdown-item" href="#">Critical illness insurance</a>
                                     <a class="dropdown-item" href="#">Health and dental insurance</a>
@@ -162,12 +154,12 @@
           <!-- Hero Image -->
         <div class="jumbotron homeHero">
             <p> <span class = "bigGreen">$1000</span> average annual savings</p>
-            <p> <span class = "bigGreen">5 Minutes</span>to set up coverage</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Get a Quote</a>
+            <p> <span class = "bigGreen">5 Minutes</span> to set up coverage</p>
+            <a class="btn btn-primary btn-lg" href="./quote.html" role="button">Get a Quote</a>
         </div>
         <!-- Cards -->
         <div class="container qTools">
-            <h2>Quick Tools</h2>
+            <h2 class = "secHeader">Quick Tools</h2>
             <div class = "row no-gutters">         <!-- must have class = 'row' and then class = "col-md" -->
               <div class="col-sm"> 
                 <div class="card qCard" style="width: 18rem;">
@@ -220,20 +212,17 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row">
-                                    <div class="col-md-4 mb-2">
+                                    <div class="col-md-4 mb-1">
                                         <div class="card">
-                                            <div class = "image-gradient">
-                                            <img class="img-fluid img-gradient" alt="100%x280" src="images/testimonials 1.jpg" style ="width: 295px; height: 230px; object-fit: cover;">
-                                            </div>
+                                            <img class="img-fluid" alt="100%x280" src="images/testimonials 1.jpg" style ="width: 295px; height: 230px; object-fit: cover;"  mask-image="linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);">
                                             <div class="card-body">
                                                 <h4 class="card-title">“</h4>
                                                 <p class="card-text">I got my car insurance with Manulife because they have a lot of good deals for the new grads.</p>
-    
                                             </div>
-    
+
                                         </div>
                                     </div>
-                                    <div class="col-md-4 mb-3">
+                                    <div class="col-md-4 mb-1">
                                         <div class="card">
                                             <img class="img-fluid" alt="100%x280" src="images/testimonials 2.png" style ="width: 295px; height: 230px; object-fit: cover;">
                                             <div class="card-body">
@@ -243,7 +232,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 mb-3">
+                                    <div class="col-md-4 mb-1">
                                         <div class="card">
                                             <img class="img-fluid" alt="100%x280" src="images/testimonials 3.jpg" style ="width: 295px; height: 230px; object-fit: cover;">
                                             <div class="card-body">
@@ -290,79 +279,85 @@
                                             </div>
                                         </div>
                                     </div>
-    
+                                    </div>
                                 </div>
                             </div>
                             </div>
                         </div>
-                    </div> 
-                    <a class="chevleftGreen" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                    <a class="chevGreen " href="#carouselExampleIndicators2" role="button" data-slide="next">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
+                   
                     
+                </div>
+                
+                <div class="col-6 text-right cIndicator">
+                    <div class = "chevrons">
+                    <a class="chevleftGreen" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <!-- <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev"> -->
+                        <!-- <span class="chevGreen"></span> -->
+                    </a>
+                    <!-- <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol> -->
+                    <a class="chevGreen " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                        <!-- <span class="chevLeftGreen"></span> -->
+                    </a>
+                </div>
                 </div>
 
             </div>
         </div>
     </section>
     <section class ="lifePlans">
-         <div class="container">
-            <div class="row">
-                <div class="col-sm">
+        <h2 class = "secHeader">Life Events</h2>
+         <div class="container-fluid">
+            <div class="row padding-0">
+                <div class="col-sm padding-0" style ="width: 20%">
                     <div class="card" >
+                        <img class="card-img-top center" src="images/Group 86Family.png" alt="Card image cap" style ="width: 70px" >
                         <div class="card-body">
-                          <img class="card-img-top center" src="images/Group 86Family.png" alt="Card image cap" style ="width: 70px" >
-                          <h5 class="card-title">Family</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      
+                          <p class="card-text">Our finances and insurance play an important role in keeping your loved ones safe.
                           </p>
-                          <a href="#">Go for it</a>
+                          <a href="#">Family<span class="chevRed"></span></a>
                       </div>
                       </div>
                 </div>
-                <div class="col-sm">
-                    <div class="card">
+                <div class="col-sm padding-0">
+                    <div class="card" >
                         <img class="card-img-top center" src="images/Group 87House.png" alt="Card image cap" style ="width: 70px">
                         <div class="card-body">
-                          <h5 class="card-title">House</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      
+                          <p class="card-text">You’re about to buy a house. Plans are underway and everything’s going great.
                           </p>
                           <a href="#">House<span class="chevRed"></span></a>
                       </div>
                       </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm padding-0" style ="width: 20%">
                     <div class="card" >
                         <img class="card-img-top center" src="images/Group 88Retirement.png" alt="Card image cap" style ="width: 70px">
                         <div class="card-body">
-                          <a href="#" class="card-title">Retirement</a>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          <!-- <a href="#" class="card-title">Retirement</a> -->
+                          <p class="card-text">Whether retirement is soon or years away,live your life the way you’d like! </p>
                           <a href="#">Retirement<span class="chevRed"></span></a>
                       </div>
                       </div>
                 </div>
-                <div class="col-sm">
-                    <div class="card" >
+                <div class="col-sm padding-0" style ="width: 20%">
+                    <div class="card">
                         <img class="card-img-top center" src="images/Group 89Employment.png" alt="Card image cap" style ="width: 70px">
                         <div class="card-body">
-                        <h5 class="card-title">Employment</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <p class="card-text">Become more financially savvy and learn what you can do in your new situation.
                         </p>
                         <a href="#">Employment<span class="chevRed"></span></a>
                     </div>
                     </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm padding-0" style ="width: 20%">
                     <div class="card">
                         <img class="card-img-top center" src="images/Group 90Health.png" alt="Card image cap" style ="width: 70px">
                         <div class="card-body">
-                        <h5 class="card-title">Health</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <!-- <h5 class="card-title">Health</h5> -->
+                        <p class="card-text">With life insurance, you can the  decide how you wish to use the policy proceeds.</p>
                         <a href="#">Health<span class="chevRed"></span></a>
                     </div>
                     </div>
@@ -370,21 +365,27 @@
             </div>
         </div>
     </section>
+    <section class = "subscribe">
+        <div class = "container">
+        <img src = "images/homepage - subscribe.jpg" style = "height: 320px">
+        <div class = "newsletter">
+        <h3> Newsletter</h3> 
+        <p> Sign up with your email address to receive news and updates.</p>
         <div class="input-group flex-nowrap">
-            <h3> Subscribe to get informed</h3> 
-            <p></p>
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="addon-wrapping">Email</span>
-             </div>
-            <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="addon-wrapping">
+            <input type="text" class="form-control" placeholder="Email Address" aria-label="Email" aria-describedby="addon-wrapping">
         </div>
+        <div class="input-group-prepend btn">
+            <span class="input-group-text" id="addon-wrapping">Subscribe</span>
+         </div>
+    </div>
+    </div>
 
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
-    
+    </section>
     </body>
 <footer>
     <img class = "logo" src = "images/Manulife+Securities+white 1.png" width="220px"> 

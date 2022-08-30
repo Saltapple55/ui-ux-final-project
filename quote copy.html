@@ -6,11 +6,10 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/ef5aeb3d8b.js" crossorigin="anonymous"></script>
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link  rel="stylesheet" href="css/style.css" type="text/css">
+        <link  rel="stylesheet" href="css/stylecopy.css" type="text/css">
         <title>Manulife Center</title>
       </head>
     <body>
@@ -199,110 +198,73 @@
       <div class="slider"> 
         <div class="container">
             <div class="slides">
-              <div id="slide-1" >
-                  <div class = "blankrow"></div>
-                    <div  class = "slideCont" id = "slide-1Content">
+              <div id="slide-1">
+                  <div id = "blank1"></div>
                 <img src="images/Choose Coverage.png" alt="...">
-                      <h3>Choose your coverage </h3>
-                      <form> 
-                        <div class="form-group">
-                          <label for="exampleFormControlSelect1">Please select the option that fits your need.</label>
-                          <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Life Insurance</option>
-                            <option>Disability Insurance</option>
-                            <option>Critical Illness Insurance</option>
-                            <option>Health & Dental Insurance</option>
-                            <option>Travel Insurance</option>
-                            <option>Combination Insurance</option>
-                            <option>Mortgage Protection</option>
-                          </select>
-                          </div>
-                      </form>
-                      <a class="btn btn-primary btn-lg" href="#slide-2" role="button" id = "nextBtn">Next</a> 
-                    </div>
-                    
-              </div>
-              <div id="slide-1-5">
-                <div class = container>
-                  <div class = blank>
+                    <h3>Choose your coverage </h3>
+                    <p>Please select the option that fits your need.</p>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Life Insurance</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Disability Insurance</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Critical Illness Insurance</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Health & Dental Insurance</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Travel Insurance</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Combination Insurance</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Mortgage Protection</a>
+                        </div>
+                      </li>
 
-                  </div>
+                      <a class="btn btn-primary btn-lg" href="#slide-2" role="button" id = "nextBtn">Next</a> 
+                 
                 </div>
-              </div>
+              
               <div id="slide-2">
-                <div class = "blankrow"></div>
-                <div class = "slideCont container-fluid">
+                <div id = "blank2"></div>
                 <h3>Tell us about yourself </h3>
-                    <form class = "quoteForm">
+                    <p>Please select the option that fits your need.</p>
+                    <form>
                         <div class="form-group">
                           <label for="exampleInputEmail1">Birthday</label>
                           <input type="date" class="form-control" id="birthday" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlSelect1">What province are you from?</label>
+                            <label for="exampleFormControlSelect1">Example select</label>
                             <select class="form-control" id="exampleFormControlSelect1">
-                              <option>Alberta</option>
-                              <option>British Columbia</option>
-                              <option>Manitoba</option>
-                              <option>New Brunswick</option>
-                              <option>Newfoundland</option>
-                              <option>Nova Scotia</option>
-                              <option>Ontario</option>
-                              <option>Prince Edward Island</option>
-                              <option>Quebec</option>
-                              <option>Saskatchewan</option>
-                            </select>
-                            </div>
+                              <option>1</option>
+                              <option>2</option>
                         <div class="form-group">
-                          <label for="exampleFormControlSelect1">What is your assigned sex at birth?</label>
-                          <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Male</option>
-                            <option>Female</option>
-                            <option>Other</option>
-                            </select>
-                            </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlSelect1">In the last 12 months, have you smoked, vaped or used cigarettes, cigarillos, small cigars, pipes, chewing tobacco, nicotine gum or patches, or nicotine or tobacco in any other form?</label>
-                          <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Yes</option>
-                            <option>No</option>
-                            </select>
-                            </div>
-                          </form>
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
                         <a class="btn btn-primary btn-lg" href="#slide-1" role="button" id = "prevBtn">Back</a>
                         <a class="btn btn-primary btn-lg" href="#slide-3" role="button" id = "nextBtn2">Submit</a>
-
-                    </div>
-              </div>
-              <div id="slide-2-5">
-                <div class = container>
-                  <div class = blankcol>
-
-                  </div>
-                </div>
+                      </form>
               </div>
               <div id="slide-3">
-                <div class = "blankrow"></div>
-                <div class = "slideCont">
-                  <div class = "quoteTitle">
-                    <h1>Quote Results</h1>
-                  </div>
+                <div id = "blank3"></div>
                 <div class="jumbotron quoteRes">
-
-                    <div class = "row">
-                      <div class = "column">
-                      <p>Your quote coverage amount:</p>
-                      <h3 class = "greenRes">$200,000</h3>
-                    </div>
-                    <div class = "column">
-                      <p>Your price per month:</p>
-                      <h3 class = "greenRes">$200,000<span class = "greenResSmall"> for 20 years</span></h3>
-                    </div>
-                    </div>
+                  <h1 class="display-4">Goodbye</h1>
+                  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                  <hr class="my-4">
+                  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
                   <a class="btn btn-primary btn-lg" href="#slide-2" role="button" id = "prevBtn2">Back</a>
                   <a class="btn btn-primary btn-lg" href="#" role="button" id="finishBtn" >Learn more</a>
                 </div>
-              </div>
               </div>
             </div>
           </div>

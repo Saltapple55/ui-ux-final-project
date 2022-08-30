@@ -2,24 +2,164 @@
 <html>
     <head>
         <title>Life Insurances</title>
-        <link rel='stylesheet' href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="UTF-8">
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel='stylesheet' href="style2.css">
+
     </head>    
 
     <body>
-        <!--Here goes the nav bar
-        <header>
-        </header>
-        -->
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navTop">
+            <a href="/index.html"><img src = "Manulife+Securities+white 1.png" width="218px"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Location <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light navBottom">  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Individual
+                    </a>
+                    <div class="dropdown-menu megamenu" aria-labelledby="navbarDropdownMenuLink">
+                        <div class = "row">
+                            <div class = "column col-3">
+                                <div class = "navSection">
+                                    <a class="dropdown-item navTitle" href="#">Insurance</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="./comparison-page/comparison.html">Life insurance</a>
+                                    <a class="dropdown-item" href="#">Disability insurance</a>
+                                    <a class="dropdown-item" href="#">Critical illness insurance</a>
+                                    <a class="dropdown-item" href="#">Health and dental insurance</a>
+                                    <a class="dropdown-item" href="#">Travel insurance</a>
+                                    <a class="dropdown-item" href="#">Combination insurance</a>
+                                    <a class="dropdown-item" href="#">Mortgage protection</a>
+                                    </div>
+                                <div class = "navSection">
+                                    <a class="dropdown-item navTitle" href="#">Invesments</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Solutions</a>
+                                    <a class="dropdown-item" href="#">Viewpoints</a>
+                                    <a class="dropdown-item" href="#">Resources</a>
+                                    <a class="dropdown-item" href="#">Sustainability</a>
+                                    <a class="dropdown-item" href="#">Travel insurance</a>
+                                    <a class="dropdown-item" href="#">Regulatory</a>
+                                    <a class="dropdown-item" href="#">In the media</a>
+                                    </div>
+                                </div>
+                            <div class = " column col-3"> 
+                                <div class = "navSection">
+                                    <a class="dropdown-item navTitle" href="#">Plans</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Group benefits</a>
+                                    <a class="dropdown-item" href="#">Group retirement</a>
+                                    <a class="dropdown-item" href="#">Personal plan</a>
+                                    </div>
+                                <div class = "navSection">
+                                    <a class="dropdown-item navTitle" href="#">Learn</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Insurance explained</a>
+                                    <a class="dropdown-item" href="#">The power of Manulife advice</a>
+                                    <a class="dropdown-item" href="#">Life milestones</a>
+                                    <a class="dropdown-item" href="#">Healthy finances</a>
+                                    <a class="dropdown-item" href="#">Healthy living</a>
+                                    <a class="dropdown-item" href="#">Alumni networks</a>
+                                    </div>
+                                </div>
+                            <div class = " column col-3"> 
+                                <div class = "navSection">
+                                    <a class="dropdown-item navTitle" href="#">Vitality</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Manulife Vitality for individuals</a>
+                                    <a class="dropdown-item" href="#">Manulife Vitality for group benefits members</a>
+                                    <a class="dropdown-item" href="#">Rewards and benefits</a>
+                                    </div>
+                                <div class = "navSection">
+                                <a class="dropdown-item navTitle" href="#">Support</a>
+                                <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">COVID-19 Centre</a>
+                                    <a class="dropdown-item" href="#">Manulife ID Support System</a>
+                                    <a class="dropdown-item" href="#">Tools</a>
+                                    <a class="dropdown-item" href="#">Contact us</a>
+                                    <a class="dropdown-item" href="#">Manulife forms</a>
+                                    <a class="dropdown-item" href="#">Find an advisor</a>
+                                </div>
+                            </div>
+                            <div class = " column col-3"> 
+                              <div class = "navSection">
+                                  <a class="dropdown-item navTitle" href="#">Manulife Bank</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Accounts</a>
+                                  <a class="dropdown-item" href="#">Credit Cards</a>
+                                  <a class="dropdown-item" href="#">Mortgages</a>
+                                  <a class="dropdown-item" href="#">Loans</a>
+                                  <a class="dropdown-item" href="#">Investments</a>
+                                  <a class="dropdown-item" href="#">Plan and Learn</a>
+                                  <a class="dropdown-item" href="#">Support</a>
+                              </div>
+                          </div>
+                        </div>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Business
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Advisors
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+            
+          </nav>
 
         
         
         <!-----------------------------------Three Insurance comparison section------------------------------------------->
-        
+        <section class = main>
         <section class="product-comparison">
 
             <!--This is the banner seciton-->
@@ -140,8 +280,47 @@
             </div>
 
         </section>
+    </section>
 
-      
+    <footer>
+        <img class = "logo" src = "Manulife+Securities+white 1.png" width="220px"> 
+        <div class = "row">
+            <div class = "column footerCol">
+                <ul class = "menu">
+                    <li> Quick Links <span class = "red">></span> </li>
+                    <li>Legal <span class = "red">></span></li>
+                </ul>
+            </div>
+            <div class = "column footerCol">
+                <ul class = "menu">
+                    <li> About Manulife <span class = "red">></span></li>
+                    <li>Privacy Policy <span class = "red">></span></li>
+                </ul>
+            </div>   
+            <div class = "column footerCol">
+                <ul class = "menu">
+                    <li> Support <span class = "red">></span></li>
+                    <li> Site Map <span class = "red">></span></li>
+    
+                </ul>
+            </div>  
+             
+            <div class = "column footerCol">
+                <ul class = "menu">
+                    <li> Connect <span class = "red">></span></li>
+                    <li> Accessibility <span class = "red">></span></li>
+                </ul>
+            </div>  
+            
+            <div class = "column footerCol">
+                <ul class = "menu">
+                    <li> Manulife Global Website <span class = "red">></span></li>
+                </ul>
+            </div>  
+        </div>
+        <p>Copyright © 1999-2022 The Manufacturers Life Insurance Company (Manulife)</p>
+    
+    </footer>
         <!--Here goes the footer
         <footer>
         </footer>
